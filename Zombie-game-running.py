@@ -14,3 +14,6 @@ def display_intro():
         The adventure begins now...
         """
     gf.typewriter_effect(intro_text, delay=0.03)
+
+
+
