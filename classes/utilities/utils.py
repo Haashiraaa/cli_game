@@ -2,6 +2,7 @@
 
 import sys
 
+
 def clear_line(n: int = 1):
     """
     Clear the previous N lines in the terminal.
@@ -17,3 +18,8 @@ def clear_line(n: int = 1):
         sys.stdout.write("\033[1A")     # Move cursor up
         sys.stdout.write("\r\033[2K")   # Clear line
     sys.stdout.flush()
+
+def display(text, show=True):
+    """docstrings"""
+    if show:
+        print(f"\n{text}")

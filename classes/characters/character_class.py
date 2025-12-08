@@ -1,5 +1,6 @@
 # character_class.py
 
+from utilities.utils import display 
 
 # description of class
 
@@ -16,7 +17,6 @@ class Character:
         self.is_alive = True
         self.status_effects = []
 
-    
 
     def take_damage(self, amount):
         damage = max(0, amount - self.defense)
@@ -31,6 +31,4 @@ class Character:
         x, y = self.position
         self.position = (x + dx, y + dy)
 
-
-
-
+    
