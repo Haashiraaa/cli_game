@@ -89,7 +89,7 @@ def menu_options():
     gf.clear_screen()
     print(f"""
         {'='*60}
-        =                WELCOME TO *insert name here*                 =
+        =                WELCOME TO THE LAST SUDO: GENESIS                 =
         {'='*60}
         =                                                              =
         =                     1. Begin                                 =

@@ -1,4 +1,4 @@
-iport os
+import os
 import sys
 import time
 
