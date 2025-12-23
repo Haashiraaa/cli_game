@@ -5,17 +5,18 @@ from mixins.speak_mixins import SpeakMixin
 
 # comment
 
+
 class Player(Character, SpeakMixin):
 
-    def __init__(self, name, health, attack_power, defense, speed,):
-        super(). __init__(name, health, attack_power, defense, speed,)    
-        self.inventory = {}
-        self.hunger_level = 0
-        self.stamina_level = 0
-
-
-
-
-
-
-
+    def __init__(
+        self,
+        name: str,
+        health: int,
+        attack_power: int,
+        defense: int,
+        speed: int
+    ):
+        super(). __init__(name, health, attack_power, defense, speed,)
+        self.inventory: dict[str, int] = {}
+        self.hunger_level: int = 0
+        self.stamina_level: int = 0
